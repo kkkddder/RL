@@ -28,6 +28,15 @@ h1 {
   position: relative;
 }
 
+div.cv{
+  text-align: center;
+  vertical-align: middle;
+  top: 90px;
+  /*width: 2800;*/
+  margin: auto;
+  position: relative;
+
+}
 
 
 /*p.bioa {

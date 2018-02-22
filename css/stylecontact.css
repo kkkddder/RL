@@ -35,7 +35,30 @@ h3 {
   position: relative;
 }
 
+p.icon {
+  opacity: 1;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  top: 150px;
+  position: relative;
+  margin-bottom: 20%;
+  
+}
 
+img.icon {
+  opacity: 0.8;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  top: 30px;
+  position: relative;
+  margin-left: 4%;
+  margin-right: 4%;
+  display:inline-block;
+  /*margin-right: 10%;*/
+  
+}
 
 /*p.bioa {
 	color: rgba(80,80,80,100);
