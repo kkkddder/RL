@@ -6,12 +6,14 @@ var p5_colors = new p5(function(sketch){
 	sketch.preload = function() {
 		MNTable1 = sketch.loadTable('../../project/project5/data/part1.csv', 'csv', 'header'); // tell it read the first row as header
 		// console.log('Table has been loaded...'); // console.log for js in general, print for p5 library
-		sketch.print(MNTable1.getRowCount());
+		// sketch.print(MNTable1.getRowCount());
+		// sketch.resizeCanvas();
 	}
 
 
 	sketch.setup = function() {
-  		var cnv = sketch.createCanvas(1320, 350); 
+  		var cnv = sketch.createCanvas(windowWidth, windowHeight);
+  		sketch.print(sketch.windowWidth); 
   		sketch.textFont("Nunito");
   		cnv.parent('neighborhood');
   		// sketch.colorMode(HSL);
@@ -25,9 +27,10 @@ var p5_colors = new p5(function(sketch){
 		var to = sketch.color(0, 0, 0);
 		var from = sketch.color(255, 255, 255);
 		var textColor = sketch.color(120,120,120);
+		sketch.print(MNTable1.getRowCount());
 		for (var j =1; j <= 26; j++) {
 			// MNTable = loadTable('../data/try1.csv', 'csv', 'header');
-			sketch.print(MNTable1.getRowCount());
+			
 			// var to = sketch.color(60, 10, 230);
 			
 			// var to = color(255, 255, 255);
@@ -71,7 +74,13 @@ var p5_colors = new p5(function(sketch){
 		sketch.fill(textColor);
 		sketch.text("Number of Buildings",605, 310);
 
-}
+	}
+
+
+	sketch.windowResized = function() {
+  		sketch.resizeCanvas(windowWidth, windowHeight);
+  		sketch.print(windowWidth);
+	}
 });
 
 var p5_bubbles = new p5(function(sketch) {
@@ -80,7 +89,7 @@ var p5_bubbles = new p5(function(sketch) {
 	sketch.preload = function() {
 		MNTable2 = sketch.loadTable('../../../project/project5/data/part2.csv', 'csv', 'header'); // tell it read the first row as header
 		// console.log('Table has been loaded...'); // console.log for js in general, print for p5 library
-		sketch.print(MNTable2.getRowCount());
+		// sketch.print(MNTable2.getRowCount());
 	}
 
 	sketch.setup = function() {
@@ -97,6 +106,7 @@ var p5_bubbles = new p5(function(sketch) {
 		var to = sketch.color(0, 0, 0);
 		var from = sketch.color(255, 255, 255);
 		var textColor = sketch.color(120,120,120);
+		sketch.print(MNTable2.getRowCount());
 		for (var j =1900; j < 2016; j++) {
 			var numEachYear = 0;
 			sketch.stroke(to);
