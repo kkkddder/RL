@@ -39,34 +39,37 @@ div.cv{
 }
 
 
-/*p.bioa {
+p.bioa {
 	color: rgba(80,80,80,100);
 	font-family: 'Nunito', sans-serif;
 	text-align: center;
 	vertical-align: middle;
-	width: 400px;
+	width: 450px;
 
-	position: relative; 
-	top: 85px;
-	margin: auto;
+	position: relative;
+  margin: auto; 
+	margin-top: 35px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;	
 }
+
+
 p.biob {
 	color: rgba(80,80,80,100);
 	font-family: 'Nunito', sans-serif;
 	text-align: center;
 	vertical-align: middle;
-	width: 400px;
+	width: 450px;
 
 	position: relative; 
-	top: 100px;
-	margin: auto;
+  margin: auto;
+	margin-top: 15px;
+	
 	display: flex;
 	justify-content: center;
 	flex-direction: column;	
-}*/
+}
 
 
 
@@ -196,7 +199,9 @@ hr {
   	border-style: solid; 
   	border-color: #8c8b8b; 
   	border-width: 1px 0 0 0; 
-  	border-radius: 20px;
+  	/*border-radius: 20px;*/
 }
 
-
+div{
+    margin-top: 50px;
+}
